@@ -1,0 +1,25 @@
+{
+  "port": "DHAKA",
+  "analysis_date": "2025-09-23T00:39:51.959345",
+  "forecast_horizon_days": 7,
+  "hyperion_analysis": {
+    "flood_risk": 0.45,
+    "port_info": {
+      "country": "Bangladesh",
+      "region": "South Asia",
+      "monsoon_season": true,
+      "flood_prone": true
+    },
+    "risk_level": "MEDIUM"
+  },
+  "atlas_analysis": {
+    "freight_forecast_available": true,
+    "disruption_premium_usd_per_teu": 450
+  },
+  "integrated_recommendations": [
+    "\ud83d\udcca Standard monitoring - medium flood risk",
+    "\ud83d\udcb0 Consider +$450/TEU premium for risk mitigation",
+    "\ud83c\udf27\ufe0f  Monsoon season active - expect weather delays",
+    "\ud83c\udfd7\ufe0f  Port is flood-prone - monitor water levels"
+  ]
+}

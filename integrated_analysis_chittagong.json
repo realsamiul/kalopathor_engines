@@ -1,0 +1,26 @@
+{
+  "port": "CHITTAGONG",
+  "analysis_date": "2025-09-23T00:39:47.416787",
+  "forecast_horizon_days": 7,
+  "hyperion_analysis": {
+    "flood_risk": 0.85,
+    "port_info": {
+      "country": "Bangladesh",
+      "region": "South Asia",
+      "monsoon_season": true,
+      "flood_prone": true
+    },
+    "risk_level": "CRITICAL"
+  },
+  "atlas_analysis": {
+    "freight_forecast_available": true,
+    "disruption_premium_usd_per_teu": 800
+  },
+  "integrated_recommendations": [
+    "\ud83d\udea8 IMMEDIATE ACTION: Book alternative routes - flood risk is critical",
+    "\ud83d\udccb Consider air freight for time-sensitive cargo",
+    "\ud83d\udcb0 Budget for +$450/TEU disruption premium",
+    "\ud83c\udf27\ufe0f  Monsoon season active - expect weather delays",
+    "\ud83c\udfd7\ufe0f  Port is flood-prone - monitor water levels"
+  ]
+}

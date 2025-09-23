@@ -1,0 +1,22 @@
+{
+  "port": "ROTTERDAM",
+  "analysis_date": "2025-09-23T00:40:00.592791",
+  "forecast_horizon_days": 7,
+  "hyperion_analysis": {
+    "flood_risk": 0.25,
+    "port_info": {
+      "country": "Netherlands",
+      "region": "Europe",
+      "monsoon_season": false,
+      "flood_prone": false
+    },
+    "risk_level": "LOW"
+  },
+  "atlas_analysis": {
+    "freight_forecast_available": true,
+    "disruption_premium_usd_per_teu": 0
+  },
+  "integrated_recommendations": [
+    "\u2705 Low flood risk - proceed with normal operations"
+  ]
+}
