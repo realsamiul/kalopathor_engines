@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "model_id": "hawkeye-crop-v1",
+    "model_name": "HawkEYE Crop Intelligence Engine",
+    "generated_at": "2025-09-25T13:13:49.749081Z",
+    "aoi_name": "Jessore Region, Bangladesh",
+    "tags": [
+      "crop stress",
+      "self-supervised",
+      "unsupervised",
+      "vegetation indices",
+      "Sentinel-2"
+    ]
+  },
+  "story": {
+    "one_liner": "Self-supervised AI discovers hidden crop stress patterns from raw satellite data.",
+    "description": "The HawkEYE engine uses advanced self-supervised learning to create feature embeddings from unlabeled satellite imagery. Unsupervised clustering is then applied to these features to identify and map areas of potential agricultural stress."
+  },
+  "results": {
+    "quantitative": {
+      "estimated_stressed_area_percent": 8.27,
+      "total_clusters_identified": 4
+    },
+    "qualitative": {
+      "key_insight": "The model identified significant areas of potential crop stress using vegetation indices and unsupervised clustering.",
+      "confidence": "High. Multiple vegetation indices showed consistent patterns."
+    }
+  },
+  "artifacts": {
+    "images": {
+      "rgb_preview": "crop_demo_assets\\jessore_rgb_preview.png",
+      "stress_overlay": "crop_demo_assets\\jessore_stress_overlay.png"
+    }
+  }
+}

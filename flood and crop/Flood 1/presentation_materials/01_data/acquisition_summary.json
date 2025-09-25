@@ -1,0 +1,19 @@
+{
+  "locations": [
+    "Pakistan_Dadu_2022",
+    "Bangladesh_Sylhet_2022",
+    "India_Bangalore_2022"
+  ],
+  "countries": [
+    "Pakistan",
+    "Bangladesh",
+    "India"
+  ],
+  "total_affected": 800000,
+  "data_types": [
+    "s1_pre",
+    "s1_flood",
+    "flood_mask"
+  ],
+  "timestamp": "2025-09-25T08:11:22.985034"
+}

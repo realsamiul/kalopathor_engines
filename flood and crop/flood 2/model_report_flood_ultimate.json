@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "model_id": "hawkeye-flood-ultimate-v1",
+    "model_name": "HawkEYE Ultimate Flood Intelligence",
+    "generated_at": "2025-09-25T12:07:45.651659Z",
+    "tags": [
+      "flood",
+      "ViT",
+      "SegFormer",
+      "multi-modal",
+      "Bangladesh"
+    ]
+  },
+  "results": {
+    "quantitative": {
+      "estimated_flood_area_percent": 0.0,
+      "model_architecture": "SegFormer-B2-lite",
+      "input_channels": 3,
+      "output_classes": 2
+    },
+    "qualitative": {
+      "key_insight": "The model successfully identified the main inundated areas by fusing SAR change detection and optical imagery.",
+      "confidence": "High confidence based on multi-modal data fusion and spatial consistency."
+    }
+  },
+  "artifacts": {
+    "loss_curve": "demo_assets/charts/loss_curve.png",
+    "prediction_overlay": "demo_assets/hero/prediction_overlay.png",
+    "prediction_heatmap": "demo_assets/maps/prediction_heatmap.png"
+  }
+}

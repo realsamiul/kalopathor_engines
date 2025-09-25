@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-09-25T08:11:22.985034",
+  "events": {
+    "Pakistan_Dadu_2022": {
+      "event": {
+        "name": "Pakistan_Dadu_2022",
+        "aoi": [
+          67.7,
+          26.7,
+          67.9,
+          26.9
+        ],
+        "event_date": "2022-08-28",
+        "population_affected": 500000
+      },
+      "data": {
+        "s1_pre": "data/optimized/S1_Pakistan_Dadu_2022_pre.tif",
+        "s1_flood": "data/optimized/S1_Pakistan_Dadu_2022_flood.tif",
+        "flood_mask": "data/optimized/mask_Pakistan_Dadu_2022.tif"
+      }
+    },
+    "Bangladesh_Sylhet_2022": {
+      "event": {
+        "name": "Bangladesh_Sylhet_2022",
+        "aoi": [
+          91.85,
+          24.85,
+          91.95,
+          24.95
+        ],
+        "event_date": "2022-06-17",
+        "population_affected": 200000
+      },
+      "data": {
+        "s1_pre": "data/optimized/S1_Bangladesh_Sylhet_2022_pre.tif",
+        "s1_flood": "data/optimized/S1_Bangladesh_Sylhet_2022_flood.tif",
+        "flood_mask": "data/optimized/mask_Bangladesh_Sylhet_2022.tif"
+      }
+    },
+    "India_Bangalore_2022": {
+      "event": {
+        "name": "India_Bangalore_2022",
+        "aoi": [
+          77.55,
+          12.95,
+          77.65,
+          13.05
+        ],
+        "event_date": "2022-09-05",
+        "population_affected": 100000
+      },
+      "data": {
+        "s1_pre": "data/optimized/S1_India_Bangalore_2022_pre.tif",
+        "s1_flood": "data/optimized/S1_India_Bangalore_2022_flood.tif",
+        "flood_mask": "data/optimized/mask_India_Bangalore_2022.tif"
+      }
+    }
+  },
+  "processing_time": "optimized"
+}
