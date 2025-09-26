@@ -1,0 +1,124 @@
+
+🎯 HAWKEYE OMEGA v2 DATA ACQUISITION - FINAL CHECKLIST
+
+PRIORITY ORDER (Based on HAWKEYE script requirements):
+
+✅ TIER 1: CRITICAL (Required for Core Functionality)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ⭐ VIIRS NIGHTTIME LIGHTS (Economic Proxy)
+   □ Install: pip install earthengine-api
+   □ Run: ee.Authenticate() [ONE TIME]
+   □ Execute: viirs_acquisition_script.py
+   □ Output: dhaka_nightlights_2022_2025.csv
+   □ Expected: ~45 monthly records
+   □ Time: 5 minutes
+   □ Backup: https://eogdata.mines.edu/products/vnl/
+
+2. ⭐ DENGUE DISEASE DATA (Primary Target)
+   □ Go to: https://dashboard.dghs.gov.bd/pages/heoc_dengue_v1.php
+   □ Save page as HTML
+   □ Go to: https://old.dghs.gov.bd/index.php/bd/home/5200-daily-dengue-status-report
+   □ Download all press releases (2022-2025)
+   □ Output: bangladesh_dengue_cases_2022_2025.csv
+   □ Expected: 1000+ daily records
+   □ Time: 15 minutes
+   □ Backup: https://data.who.int/countries/050
+
+3. ⭐ WEATHER DATA (Disease Driver)
+   □ Register: https://openweathermap.org/api (free)
+   □ Get API key from profile
+   □ Execute: openweather_api_script.py
+   □ Output: dhaka_weather_recent.csv
+   □ Expected: Current + 5 days
+   □ Time: 5 minutes
+   □ Backup: https://www.visualcrossing.com/weather-history/
+
+✅ TIER 2: HIGH PRIORITY (Model Enhancement)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. 📊 BMD WEATHER HISTORICAL
+   □ Go to: https://data.mendeley.com/datasets/tbrhznpwg9/1
+   □ Click "Download" button
+   □ Unzip BD_Weather.csv
+   □ Execute: bmd_processing_script.py
+   □ Output: dhaka_weather_2022_2025.csv
+   □ Expected: 1000+ daily records
+   □ Time: 10 minutes
+   □ Backup: http://data.gov.bd/dataset?topics=environment
+
+5. 💰 ECONOMIC INDICATORS
+   □ Execute: worldbank_api_script.py (no auth needed)
+   □ Go to: https://www.bb.org.bd/en/index.php/econdata/
+   □ Download Excel files manually
+   □ Output: bangladesh_economic_indicators_2022_2025.csv
+   □ Expected: 40+ monthly records
+   □ Time: 15 minutes
+   □ Backup: https://tradingeconomics.com/bangladesh/indicators
+
+6. 👥 POPULATION DATA
+   □ Go to: https://data.humdata.org/dataset/populationa-and-housing-census-dataset
+   □ Download CSV files
+   □ Execute: worldbank_population_api.py
+   □ Output: bangladesh_population_monthly_2022_2025.csv
+   □ Expected: 45 monthly records
+   □ Time: 10 minutes
+   □ Backup: http://nsds.bbs.gov.bd/
+
+TOTAL ESTIMATED TIME: 60-70 minutes
+TOTAL EXPECTED RECORDS: 2500+ data points
+
+VALIDATION CHECKLIST:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ All CSV files have consistent date columns
+□ No missing data for overlapping periods (2022-2025)
+□ Dhaka coordinates consistent (23.7-23.9°N, 90.3-90.5°E)
+□ Variables align with HAWKEYE script requirements:
+  □ nightlight_radiance (economic proxy)
+  □ infected/cases (disease data)  
+  □ temperature, humidity, rainfall (weather)
+  □ population_density (demographic)
+
+INTEGRATION TEST:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After data collection, run this validation:
+
+import pandas as pd
+from datetime import datetime
+
+# Load all datasets
+nightlight = pd.read_csv('dhaka_nightlights_2022_2025.csv')
+dengue = pd.read_csv('bangladesh_dengue_cases_2022_2025.csv')
+weather = pd.read_csv('dhaka_weather_2022_2025.csv')
+economic = pd.read_csv('bangladesh_economic_indicators_2022_2025.csv')
+population = pd.read_csv('bangladesh_population_monthly_2022_2025.csv')
+
+# Standardize dates
+for df in [nightlight, dengue, weather, economic, population]:
+    df['date'] = pd.to_datetime(df['date'])
+
+# Check overlap
+start_date = datetime(2022, 1, 1)
+end_date = datetime(2025, 9, 30)
+
+print("✅ Data Validation Results:")
+print(f"Nightlight: {len(nightlight)} records")
+print(f"Dengue: {len(dengue)} records") 
+print(f"Weather: {len(weather)} records")
+print(f"Economic: {len(economic)} records")
+print(f"Population: {len(population)} records")
+
+FINAL HAWKEYE INTEGRATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Once all data is collected, the HAWKEYE script will automatically:
+1. Load data from CSV files
+2. Align temporal periods
+3. Train Neural ODE on disease dynamics
+4. Generate counterfactual scenarios
+5. Produce economic impact predictions
+6. Output comprehensive analysis report
+
+🚀 READY TO EXECUTE: Follow checklist order for optimal results!

@@ -1,0 +1,188 @@
+result
+
+   Identifier: 88a0d116-cb4b-485a-961c-40fe55da6535
+
+   Name: export-and-import-riceddata-of-bangladesh
+
+   Title: Export and Import Rice data of Bangladesh
+
+   Description: Knowledge about this information will help policy makers understand the rate of growth, or lack thereof, of the basic staple food in Bangladesh. To ensure self sustainability, trend analysis of this data will prove central. Local and international NGOs can leverage the data to make robust proposals and apply for investment opportunities. Economic improvements arise, farmers will benefit etc.
+
+
+
+
+
+   Topics: Dataset
+
+   Keywords: export ,
+
+   Publisher
+
+         description: Land, crops, farmers, fertilizers, export & import
+
+         id: 3b701a09-2dae-43eb-9d67-c0278f180eb0
+
+         image_display_url: http://data.gov.bd/sites/default/files/agriculture-group_2.png
+
+         title: Agriculture
+
+         name: group/agriculture
+
+
+
+
+
+   Url: http://data.gov.bd/export-and-import-riceddata-of-bangladesh
+
+   Create date: Tue, 10/18/2016 - 02:09
+
+   Modified date: Tue, 03/14/2017 - 10:55
+
+   Resources
+
+         id: f3a2103d-7920-44d1-9099-9c7cd304b80e
+
+         revision_id: 
+
+         url: http://data.gov.bd/sites/default/files/data-resource/2016/10/20/Rice-Production-Data.pdf
+
+         description: 
+
+         format: pdf
+
+         state: Active
+
+         revision_timestamp: Thu, 10/20/2016 - 12:03
+
+         name: Rice-Production-Data
+
+         mimetype: application/pdf
+
+         size: 250.78 KB
+
+         created: Tue, 10/18/2016 - 14:14
+
+         resource_group_id: 3b701a09-2dae-43eb-9d67-c0278f180eb0
+
+         last_modified: Date changed	Thu, 10/20/2016 - 12:03
+
+
+
+         id: 02b25f92-8a24-489c-906e-3b5703650df4
+
+         revision_id: 
+
+         url: http://data.gov.bd/sites/default/files/data-resource/2016/10/18/Rice-Export-Data.csv
+
+         description: 
+
+         format: csv
+
+         state: Active
+
+         revision_timestamp: Wed, 10/19/2016 - 16:36
+
+         name: Rice-Export-Data
+
+         mimetype: text/csv
+
+         size: 286 bytes
+
+         created: Tue, 10/18/2016 - 14:14
+
+         resource_group_id: 3b701a09-2dae-43eb-9d67-c0278f180eb0
+
+         last_modified: Date changed	Wed, 10/19/2016 - 16:36
+
+
+
+         id: 5f0919a1-5a5c-48e0-b4d6-92d1917b8b0d
+
+         revision_id: 
+
+         url: http://data.gov.bd/sites/default/files/data-resource/2016/10/18/Rice-Import-Data.csv
+
+         description: 
+
+         format: csv
+
+         state: Active
+
+         revision_timestamp: Wed, 10/19/2016 - 16:36
+
+         name: Rice-Import-Data
+
+         mimetype: text/csv
+
+         size: 843 bytes
+
+         created: Tue, 10/18/2016 - 14:14
+
+         resource_group_id: 3b701a09-2dae-43eb-9d67-c0278f180eb0
+
+         last_modified: Date changed	Wed, 10/19/2016 - 16:36
+
+
+
+         id: 3b304e3f-cdd7-4c0e-ad03-76873408722d
+
+         revision_id: 
+
+         url: http://data.gov.bd/sites/default/files/data-resource/2016/10/24/gdp-growth-rate-in-bangladesh.csv
+
+         description: 
+
+         format: csv
+
+         state: Active
+
+         revision_timestamp: Mon, 10/24/2016 - 22:26
+
+         name: GDP Growth Rate in Bangladesh
+
+         mimetype: text/csv
+
+         size: 368 bytes
+
+         created: Mon, 10/24/2016 - 18:10
+
+         resource_group_id: 3b701a09-2dae-43eb-9d67-c0278f180eb0
+
+         last_modified: Date changed	Mon, 10/24/2016 - 22:26
+
+
+
+         id: bcfb10da-c568-4cb2-a706-5270421fdcc9
+
+         revision_id: 
+
+         url: http://data.gov.bd/sites/default/files/data-resource/2016/10/26/rice-export-2010-2015.csv
+
+         description: 
+
+         format: csv
+
+         state: Active
+
+         revision_timestamp: Wed, 10/26/2016 - 16:58
+
+         name: Rice Export 2010 to 2015
+
+         mimetype: text/csv
+
+         size: 76 bytes
+
+         created: Wed, 10/26/2016 - 16:58
+
+         resource_group_id: 3b701a09-2dae-43eb-9d67-c0278f180eb0
+
+         last_modified: Date changed	Wed, 10/26/2016 - 16:58
+
+
+
+
+
+
+
+
+
