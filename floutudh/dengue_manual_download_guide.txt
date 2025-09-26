@@ -1,0 +1,25 @@
+
+📋 MANUAL DENGUE DATA DOWNLOAD GUIDE
+====================================
+
+Since automated download requires additional packages, here's how to manually collect the data:
+
+1. 🌐 Go to: https://old.dghs.gov.bd/index.php/bd/home/5200-daily-dengue-status-report
+
+2. 📥 For each press release (2022-2024):
+   - Click on the date link (e.g., "ডেঙ্গু প্রেস রিলিজ ২৫/০৯/২০২৫")
+   - Copy the case numbers from the text
+   - Look for these key numbers:
+     * নতুন (new cases)
+     * মোট (total cases) 
+     * মৃত্যু (deaths)
+     * ঢাকায় (Dhaka cases)
+
+3. 📊 Create a CSV file with columns:
+   date,new_cases,total_cases,deaths,dhaka_cases,recovery
+
+4. 💡 Alternative: Use the estimated data I created above as a starting point
+   and replace with real data as you collect it.
+
+5. 🔄 Run the data validation script to check compatibility:
+   python data_validation.py
